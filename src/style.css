@@ -1,0 +1,15 @@
+/* .bg-primary {
+  background: #df6751;
+}
+.bg-light {
+  background: #fbe9e5;
+}
+
+.text-primary {
+  color: #df6751;
+} */
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
