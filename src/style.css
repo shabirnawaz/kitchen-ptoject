@@ -13,3 +13,9 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+/* @media (min-width: 640px) and (max-width: 767px) {
+  .sm-only-center {
+    text-align: center;
+  }
+} */

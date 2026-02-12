@@ -311,6 +311,9 @@
   .bottom-\[33\%\] {
     bottom: 33%;
   }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
@@ -539,6 +542,9 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-150 {
     width: calc(var(--spacing) * 150);
   }
@@ -557,8 +563,14 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-\[543px\] {
+    width: 543px;
+  }
   .w-\[600px\] {
     width: 600px;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-fit {
     width: fit-content;
@@ -1228,6 +1240,26 @@
       margin-top: calc(var(--spacing) * 44);
     }
   }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:w-150 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 150);
+    }
+  }
+  .sm\:w-\[600px\] {
+    @media (width >= 40rem) {
+      width: 600px;
+    }
+  }
+  .sm\:w-auto {
+    @media (width >= 40rem) {
+      width: auto;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1243,9 +1275,25 @@
       gap: calc(var(--spacing) * 12);
     }
   }
+  .sm\:rounded-tr-\[400px\] {
+    @media (width >= 40rem) {
+      border-top-right-radius: 400px;
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:py-8 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:text-5xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .sm\:text-xl {
@@ -1257,6 +1305,11 @@
   .md\:top-\[-55\%\] {
     @media (width >= 48rem) {
       top: -55%;
+    }
+  }
+  .md\:left-\[120px\] {
+    @media (width >= 48rem) {
+      left: 120px;
     }
   }
   .md\:mt-0 {
@@ -1312,6 +1365,12 @@
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .md\:text-4xl {
@@ -1415,6 +1474,11 @@
   .lg\:gap-20 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .lg\:px-10 {

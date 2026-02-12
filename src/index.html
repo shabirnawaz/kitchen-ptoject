@@ -24,43 +24,46 @@
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
   </head>
   <body>
-    <nav class="container mx-auto flex justify-around items-center py-8">
-      <div class="logo flex items-center gap-5 font-bold">
-        <img src="./images/Logo.svg" alt="logo" />
-        <h3 class="text-2xl">Chef's Kitchen.</h3>
-      </div>
-      <div>
-        <ul class="flex gap-9">
-          <li class="text-2xl  text-gray-400 hover:text-[#df6751]">Home</li>
-          <li class="text-2xl text-gray-400 hover:text-[#df6751]">About</li>
-          <li class="text-2xl text-gray-400 hover:text-[#df6751]">Recipe</li>
-          <li class="text-2xl text-gray-400 hover:text-[#df6751]">Gallery</li>
-        </ul>
-      </div>
-      <div class="flex gap-5 items-center">
-        <h4 class="text-2xl text-gray-400"><a class="hover:text-[#df6751]">+1(909) 235-9814</a></h4>
-        <div class="gap-5">
-          <button
-                class="border-[#df6751] bg-[#df6751] hover:bg-white hover:text-[#df6751] text-white border text-xl font-bold rounded-full py-5 px-10"
-              >
-                Sign in
-              </button>
-          
-          <!-- <button
-            class="text-1xl font-bold btn bg-[#df6751] hover:bg-white hover:text-[#df6751] border hover:border-[#df6751] py-4 px-8 text-white rounded-full"
-          >
-            Sign up
-          </button> -->
-          <button
-                class="border-[#df6751] hover:bg-[#df6751] hover:text-white text-[#df6751] border text-xl font-bold rounded-full py-5 px-10"
-              >
-                Sign up
-              </button>
-        </div>
-      </div>
-    </nav>
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-8 px-4">
+  <!-- Logo -->
+  <div class="logo flex items-center gap-5 font-bold">
+    <img src="./images/Logo.svg" alt="logo" />
+    <h3 class="text-2xl">Chef's Kitchen.</h3>
+  </div>
+
+  <!-- Nav items (desktop only) -->
+  <div class="hidden md:flex gap-9">
+    <ul class="flex gap-9">
+      <li class="text-2xl text-gray-400 hover:text-[#df6751]">Home</li>
+      <li class="text-2xl text-gray-400 hover:text-[#df6751]">About</li>
+      <li class="text-2xl text-gray-400 hover:text-[#df6751]">Recipe</li>
+      <li class="text-2xl text-gray-400 hover:text-[#df6751]">Gallery</li>
+    </ul>
+  </div>
+
+  <!-- Phone + Buttons -->
+  <div class="flex items-center gap-5">
+    <!-- Phone (always visible) -->
+    <h4 class="text-lg md:text-2xl text-gray-400"><a class="hover:text-[#df6751]">+1(909) 235-9814</a></h4>
+
+    <!-- Buttons (desktop only) -->
+    <div class="hidden md:flex gap-5">
+      <button
+        class="border-[#df6751] bg-[#df6751] hover:bg-white hover:text-[#df6751] text-white border text-xl font-bold rounded-full py-5 px-10"
+      >
+        Sign in
+      </button>
+      <button
+        class="border-[#df6751] hover:bg-[#df6751] hover:text-white text-[#df6751] border text-xl font-bold rounded-full py-5 px-10"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</nav>
+
     <section class="py-20 bg-gray-50">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
           <div class="lg:col-span-6 ">
             <h1 class="sm:text-xl md:text-4xl lg:text-7xl mb-3 font-bold">
@@ -91,7 +94,7 @@
       </div>
     </section>
     <section class="py-20">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
        <div class="mb-18  text-center">
          <p
           class="text-center text-2xl uppercase font-normal text-primary tracking-widest text-[#df6751] mb-4"
@@ -200,7 +203,7 @@
       </div>
     </section>
     <section class="py-20">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 relative ">
         <div class="absolute right-0 bottom-0 translate-y-[50%] w-[200px] lg:w-auto">
           <img src="images/burger (1).png"  alt="barger">
@@ -223,7 +226,7 @@
     </div>
     </section>
     <section class="py-20 bg-red-50 ">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
        <p class="tracking-widest text-[#df6751] uppercase text-xl"> EXPERT CHEFS</p>
        <h2 class="text-4xl font-bold">Let's meet the expert.</h2>
@@ -275,7 +278,7 @@
     </section>
     
     <section class="py-20">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
         <p class="tracking-widest  text-[#df6751] text-2xl font-normal uppercase ">Our Gallery</p>
           <h2 class="text-5xl text-center mb-6">Gallery of our cooked food.</h2>
@@ -295,11 +298,11 @@
      </div>
     </section>
     <section class="py-20 flex items-center justify-center">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 px-4 sm:px-6 lg:px-8">
         <div class="grid-col-1">
-          <div class="relative lastsec-sec bg-[#df6853]  h-96 w-full rounded-tr-[400px]">
+          <div class="relative lastsec-sec bg-[#df6853]  h-96 w-full rounded-0 sm:rounded-tr-[400px]">
             <div class="absolute right-[-4px] bottom-[-125px]  ">   
-              <img src="./images/Kitchen_files/soup.svg" alt="">
+              <img class="hidden sm:block" src="./images/Kitchen_files/soup.svg" alt="">
             </div>
             <div class="absolute right-[5%] bottom-[33%]  ">   
               <img src="./images/Kitchen_files/blue.svg" alt="">
@@ -311,15 +314,15 @@
               <img src="./images/Kitchen_files/onion.svg" alt="">
             </div>
             <div class="absolute right-[-81px] bottom-[-44px]  ">   
-              <img src="./images/Kitchen_files/lec.svg" alt="">
+              <img class="hidden sm:block" src="./images/Kitchen_files/lec.svg" alt="">
             </div>
-            <div class="absolute bottom-0 top-[20%] left-[120px]">
-              <h3 class="text-2xl text-white mb-4">NEWSLETTER</h3>
-              <h2 class="text-5xl text-white mb-5">Subscribe our newsletter.</h2>
-              <div class="relative w-[600px]" >
-                <input class="bg-white h-16 w-150 rounded-3xl p-5"  type="text" name="" id="" placeholder="Enter Your Email Adress">
+            <div class="absolute bottom-0 w-[543px] sm:w-auto top-[20%] left-0 md:left-[120px]">
+              <h3 class="text-2xl text-white mb-4 sm-only-center">NEWSLETTER</h3>
+              <h2 class="text-xl sm:text-5xl  text-white mb-5 sm-only-center">Subscribe our newsletter.</h2>
+              <div class="relative w-auto sm:w-[600px]" >
+                <input class="bg-white sm-only-center h-16 sm:w-150 w-100 rounded-3xl p-5"  type="text" name="" id="" placeholder="Enter Your Email Adress">
                 <div class="relative ">
-                  <button class="absolute  top-[-55px] right-[10px]  bottom-0  h-12 w-12 rounded-full ">
+                  <button class="absolute hidden sm:block  top-[-55px] right-[10px]  bottom-0  h-12 w-12 rounded-full ">
                     <img src="./images/Newsletter/arrow.svg" alt="">
                   </button>
                 </div>
@@ -333,7 +336,7 @@
       </div>
     </section>
     <section class="text-[#df6751] text-2xl text-center py-20">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <!-- Column 1: Logo & Description -->
       <div>
